@@ -1,8 +1,0 @@
-com\example\springsecurityjwt\springsecurityjwt\util\JwtUtil.class
-com\example\springsecurityjwt\springsecurityjwt\filters\JwtRequestFilter.class
-com\example\springsecurityjwt\springsecurityjwt\model\AuthenticationRequest.class
-com\example\springsecurityjwt\springsecurityjwt\SpringsecurityjwtApplication.class
-com\example\springsecurityjwt\springsecurityjwt\HelloResource.class
-com\example\springsecurityjwt\springsecurityjwt\services\MyUserDetailsService.class
-com\example\springsecurityjwt\springsecurityjwt\SecurityConfigurer.class
-com\example\springsecurityjwt\springsecurityjwt\model\AuthenticationResponse.class
