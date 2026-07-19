@@ -1,0 +1,12 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: LoadBalancedMainApp
+demo:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8081,localhost:8082,localhost:8083
+    ServerListRefreshInterval: 2000
+
