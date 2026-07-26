@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: interceptorsprinboot
+server:
+  port: 6755

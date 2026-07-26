@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: Zuul-Gateway
+server:
+  port: 8088
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka #${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+zuul:
+  routes:
+    Eureka-Client:
+      serviceId: Eureka-Client
+      url: http://localhost:8083/getDoctor
+
+    demo:
+      serviceId: demo
+      url: http://localhost:8086/app/get
+  host:
+    socket-timeout-millis: 30000
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework: ERROR
+    com.fd: TRACE
+  pattern:
+    console: "%-5level %d{yyyy-MM-dd HH:mm:ss} - %msg%n"
