@@ -1,2 +1,2 @@
-com\example\springsecurityjwt\springsecurityjwt\SpringsecurityjwtApplicationTests.class
-com\example\springsecurityjwt\springsecurityjwt\SecurityConfigurerTest.class
+com\example\springsecurityjwt\SecurityConfigurerTest.class
+com\example\springsecurityjwt\SpringsecurityjwtApplicationTests.class

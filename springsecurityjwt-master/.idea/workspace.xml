@@ -5,12 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f005c80c-55aa-4eee-ab37-193c6d53a39e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Eureka-Server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eureka-Server/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/SecurityConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/SecurityConfigurer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoadBalancedMainApp/LoadBalancedMainApp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/HelloResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/HelloResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/SecurityConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/SpringsecurityjwtApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/SpringsecurityjwtApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/filters/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/filters/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/model/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/model/AuthenticationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/model/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/model/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/services/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/services/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/springsecurityjwt/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityjwt/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springsecurityjwt/springsecurityjwt/SecurityConfigurerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/springsecurityjwt/SecurityConfigurerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springsecurityjwt/springsecurityjwt/SpringsecurityjwtApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/springsecurityjwt/SpringsecurityjwtApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/HelloResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/SecurityConfigurer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/SpringsecurityjwtApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/filters/JwtRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/model/AuthenticationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/model/AuthenticationResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/services/MyUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springsecurityjwt/springsecurityjwt/util/JwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springsecurityjwt-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/springsecurityjwt-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springsecurityjwt-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/springsecurityjwt-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2026-08-22T12-38-29_569-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.springsecurityjwt.springsecurityjwt.SpringsecurityjwtApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.springsecurityjwt.springsecurityjwt.SpringsecurityjwtApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/springsecurityjwt/springsecurityjwt/SecurityConfigurerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/springsecurityjwt/springsecurityjwt/SpringsecurityjwtApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,27 +57,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.springsecurityjwt [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringsecurityjwtApplication.executor": "Run",
+    "Application.com.example.springsecurityjwt.SpringsecurityjwtApplication.executor": "Run",
+    "Maven.springsecurityjwt [clean,install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.SpringsecurityjwtApplication (1).executor": "Run",
+    "Spring Boot.SpringsecurityjwtApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="SpringsecurityjwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="SpringsecurityjwtApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springsecurityjwt" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springsecurityjwt.springsecurityjwt.SpringsecurityjwtApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springsecurityjwt.SpringsecurityjwtApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
