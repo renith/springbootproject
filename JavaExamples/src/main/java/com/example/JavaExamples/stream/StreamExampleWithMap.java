@@ -1,6 +1,5 @@
 package com.example.JavaExamples.stream;
 
-import java.awt.desktop.OpenFilesEvent;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -22,7 +21,6 @@ public class StreamExampleWithMap {
         //or
         System.out.println("or");
         map.forEach((key, value) -> System.out.println(key + " " + value));
-
         //Print only keys
         System.out.println("Print only keys");
         map.keySet().stream().forEach(System.out::println);
@@ -33,20 +31,23 @@ public class StreamExampleWithMap {
 
         //Filter by key
         System.out.println("Filter by key");
-        map.entrySet().stream().filter(val -> val.getKey() > 3)
+        map.entrySet().stream().filter(val -> val.getKey() > 5)
                 .forEach(System.out::println);
 
 
         //Filter by value
         System.out.print("Filter by value");
-        map.entrySet().stream()
-                .filter(val -> val.getValue().startsWith("abi"))
+        map.entrySet().stream().filter(val -> val.getValue().startsWith("a"))
                 .forEach(System.out::println);
+
 
         //Convert values to uppercase using map()
         System.out.println("Convert values to uppercase using map()");
-        Map<Integer, String> valuesUpperCase = map.entrySet().stream().collect(Collectors.toMap(val -> val.getKey(),
-                val -> val.getValue().toUpperCase()));
+        Map<Integer, String> valuesUpperCase = map.entrySet().stream().collect(Collectors.toMap(
+                Map.Entry::getKey,
+                val -> val.getValue().toUpperCase()
+        ));
+
 
         System.out.println(valuesUpperCase);
 

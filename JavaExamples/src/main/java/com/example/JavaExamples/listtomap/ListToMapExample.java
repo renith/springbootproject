@@ -15,10 +15,11 @@ public class ListToMapExample {
         List<Employe> list = Arrays.asList(new Employe("renith", 22, "java", "chennai"),
                 new Employe("Liya", 3, "React", "pune"));
 
-        Map<String, String > map = list.stream().collect(Collectors.toMap(
-                str -> str.getLocation(),
-                str -> str.getSkill()
-        ));
-        map.entrySet().stream().forEach(val -> System.out.println(val.getKey() +" "+ val.getValue()));
+       Map<String,String> map = list.stream().collect(Collectors.toMap(
+               str -> str.getLocation(),
+               str -> str.getSkill()
+       ));
+
+       map.entrySet().stream().forEach(val -> System.out.println(val.getKey() +" "+val.getValue()));
     }
 }

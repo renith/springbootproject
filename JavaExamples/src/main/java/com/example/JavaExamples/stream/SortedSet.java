@@ -1,6 +1,7 @@
 package com.example.JavaExamples.stream;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class SortedSet {
     public static void main(String[] args) {
@@ -11,14 +12,16 @@ public class SortedSet {
         set.add(2);
         set.add(9);
 
-List<Integer> list = new ArrayList<>(set);
+        List<Integer> list = new ArrayList<>(set);
+
         System.out.println("sortedASC");
-        List<Integer> sortedAsc = list.stream().sorted()
-                        .toList();
+        List<Integer> sortedAsc = list.stream().sorted().toList();
+
         System.out.println(sortedAsc);
 
         System.out.println("sortedDesc");
-        List<Integer> sortedDesc = list.stream().sorted(Comparator.reverseOrder()).toList();
+        List<Integer> sortedDesc = list.stream().sorted(Comparator.reverseOrder())
+                .toList();
 
         System.out.println(sortedDesc);
     }

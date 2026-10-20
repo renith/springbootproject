@@ -4,16 +4,17 @@ public class AmstrongNumber {
 
     public static boolean amstrong(int n){
 
-        int original =n,r, s=0;
-        while (n>0){
-            r = n%10;
-            s= s + (int) Math.pow(r, 3);
-            n = n/10;
-        }
-        if(original == s){
-            return true;
-        }
-        return false;
+
+   int s =0, original =n,r;
+   while (n>0){
+       r = n%10;
+       s = s+(int) Math.pow(r,3);
+       n = n/10;
+   }
+   if(original == s){
+      return true;
+
+   }return false;
     }
 
     public static void main(String[] args) {

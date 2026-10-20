@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
 public class Factorial {
 
 
-
     public static void main(String[] args) {
 
         System.out.println("Enter n:");
@@ -15,16 +14,16 @@ public class Factorial {
         int n = sc.nextInt();
         System.out.println("using loop");
         int s = 1;
-        for(int i =1 ;i<=n;i++){
-            s = s*i;
+        for (int i = 1; i <= n; i++) {
+            s = s * i;
+
         }
         System.out.println(s);
 
         System.out.println("Using Stream::");
-        int s1 = 1;
-      int response =  IntStream.rangeClosed(1,n).
-                reduce(1, (a,b) -> a*b);
-      System.out.println(response);
+        int response = IntStream.rangeClosed(1, n).reduce(1, (a, b) -> a * b);
+
+        System.out.println(response);
 
     }
 }

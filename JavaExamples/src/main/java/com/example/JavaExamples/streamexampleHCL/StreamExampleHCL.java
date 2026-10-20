@@ -1,23 +1,24 @@
 package com.example.JavaExamples.streamexampleHCL;
 
 
+import com.example.JavaExamples.model.Employe;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Data
 @AllArgsConstructor
 class Employeee {
+
     private int id;
     private double salary;
     private String skill;
     private String name;
 
 }
+
 
 public class StreamExampleHCL {
 
@@ -33,16 +34,19 @@ public class StreamExampleHCL {
 
         // top 2 salary based on below skill
         List<String> skillSet = Arrays.asList("Java", "C++", "Spring Boot");
-        List<Employeee> emps = list.stream()
-                        .filter(s -> skillSet.contains(s.getSkill()))
-                                .sorted(Comparator.comparing(Employeee::getSalary).reversed())
-                                        .limit(2)
-                                                .collect(Collectors.toList());
+        System.out.println("top 2 salary based on below skill");
+        List<Employeee> emps = list.stream().filter(x -> skillSet.contains(x.getSkill()))
+                        .sorted(Comparator.comparing(Employeee::getSalary).reversed())
+                                .limit(2)
+                                        .toList();
+
+                System.out.println(emps);
 
 
-       System.out.println("top 2 salary based on below skill");
-       System.out.println(emps);
-
+        //groupby email based on first character
+        Map<Character, List<Employeee>> group = list.stream()
+                .collect(Collectors.groupingBy(x ->Character.toLowerCase(x.getSkill().charAt(0))));
+        System.out.println(group);
 
 
     /*  group.entrySet().stream().forEach(val -> {

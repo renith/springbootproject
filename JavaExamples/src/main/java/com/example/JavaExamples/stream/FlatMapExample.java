@@ -17,7 +17,6 @@ public class FlatMapExample {
                 .flatMap(List::stream)
                 .sorted()
                 .toList();
-
         System.out.println(sortedAsc);
 
         //flatMap sorted Desc

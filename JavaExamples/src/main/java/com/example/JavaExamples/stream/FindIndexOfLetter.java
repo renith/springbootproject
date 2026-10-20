@@ -1,6 +1,7 @@
 package com.example.JavaExamples.stream;
 
 
+import javax.print.DocFlavor;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,84 +16,63 @@ public class FindIndexOfLetter {
         // To find the index of small letter in the char
         System.out.println("To find the index of small letter in the char");
 
-        new String(c).chars()
-                        .filter(Character::isLowerCase)
-                                .forEach(c1 -> System.out.println((char)c1 +" "+(c1 - 'a' +1)));
+        new String(c).chars().filter(Character::isLowerCase)
+                        .forEach(x -> System.out.println((char) x +" "+(x -'a' +1)));
+
 
 
         System.out.println();
         System.out.println("To find the index of Big letter in the char");
-         new String(c).chars()
-                 .filter(Character::isUpperCase)
-                         .forEach(c1 -> System.out.println((char)c1 +" "+(c1 - 'A' +1)));
 
+        new String(c).chars().filter(Character::isUpperCase)
+                .forEach(x ->System.out.println((char)x +" "+(x - 'A' +1)));
 
         //print only small letter from string
 
         System.out.println("To find lower case from the string::");
-
-        str.chars().filter(Character::isLowerCase)
-                        .forEach(c1 -> System.out.println((char)c1));
-
+        str.chars().filter(Character::isLowerCase).forEach(x -> System.out.println((char)x));
 
         System.out.println();
         System.out.println("find digit from String");
-        str.chars().filter(Character::isDigit)
-                        .forEach(c1 -> System.out.println((char)c1));
-
+        str.chars().filter(Character::isDigit).forEach(x -> System.out.println((char)x));
 
         System.out.println();
         System.out.println("find upper case");
-        str.chars().filter(Character::isUpperCase)
-                        .forEach(c1 -> System.out.println((char)c1));
-
+        str.chars().filter(Character::isUpperCase).forEach(x -> System.out.println((char)x));
 
         System.out.println();
         System.out.println("To find the letters");
-        str.chars().filter(Character::isLetter)
-                        .forEach(c1 -> System.out.println((char)c1));
-
+        str.chars().filter(Character::isLetter).forEach(x -> System.out.println((char)x));
 
         System.out.println();
         System.out.println("To convert String into the char::");
-        List<Character> stringToChar = str.chars()
-                .mapToObj(c1 -> (char)c1)
-                .collect(Collectors.toList());
 
+        List<Character> stringToChar =  str.chars().mapToObj(c1 -> (char)c1).toList();
 
         System.out.print(stringToChar);
         System.out.println();
 
         System.out.println("Stream over a List of Strings");
         List<String> names = List.of("John", "Mary", "David");
-        names.stream().forEach(System.out::println);
+        names.forEach(System.out::println);
 
         System.out.println("Convert all Strings to uppercase");
         List<String> name = List.of("John", "Mary", "David");
-       List<String> upper =  name.stream().map(String::toUpperCase)
-               .collect(Collectors.toList());
-
-
+        List<String> upper = name.stream().map(String::toUpperCase).toList();
         System.out.println(upper);
 
 
         System.out.println("Filter Strings by length");
         List<String> names1 = List.of("Java", "Spring", "AI", "Docker");
         List<String> filterbyLength = names1.stream()
-                .filter(val -> val.length()>5)
-                .collect(Collectors.toList());
-
+                .filter(x -> x.length() >4).toList();
         System.out.println(filterbyLength);
 
         System.out.println("Flatten Strings into Characters");
         List<String> words = List.of("Java", "Stream");
-
         List<Character> flatten = words.stream()
-                .flatMap(wo -> wo.chars()
-                        .mapToObj(c1 -> (char)c1))
-                .collect(Collectors.toList());
-
-
+                .flatMap(x -> x.chars().mapToObj(c1 -> (char)c1))
+                        .toList();
         System.out.println(flatten);
 
         System.out.println("parallel");

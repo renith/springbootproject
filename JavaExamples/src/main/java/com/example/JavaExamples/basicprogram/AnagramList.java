@@ -1,5 +1,6 @@
 package com.example.JavaExamples.basicprogram;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -13,13 +14,13 @@ public class AnagramList {
                 "eat", "tea", "tan", "ate", "nat", "bat"
         );
 
-        Collection<List<String>> anagram = list.stream()
-                .collect(Collectors.groupingBy(word -> {
-                            char[] c = word.toCharArray();
-                            Arrays.sort(c);
-                            return new String(c);
-                        }
-                )).values();
+      Collection<List<String>> anagram = list.stream()
+                      .collect(Collectors.groupingBy(word -> {
+                          char[] c1 = word.toCharArray();
+                          Arrays.sort(c1);
+                          return new String(c1);
+                      })).values();
+
         System.out.println(anagram);
 
 

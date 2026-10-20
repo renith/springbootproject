@@ -14,15 +14,14 @@ public class ArrayExample {
     /*    for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        for(int j = 0; j<arr.length; j++){
+        for (int j = 0; j < n; j++) {
             System.out.println(arr[j]);
-        }
-*/
+        }*/
         System.out.println("Using Stream::");
         // Read Value
-        IntStream.range(0,n).forEach(i -> arr[i] = sc.nextInt());
+        IntStream.range(0,n).forEach(i -> arr[i] = sc.nextInt() );
 
         //Print Value
-        IntStream.of(arr).forEach(i -> System.out.println(i));
+        IntStream.of(arr).forEach(i -> System.out.println(arr[i]));
     }
 }
